@@ -1,0 +1,94 @@
+<DOCTYPE html!>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport"
+            content="width=device-width,
+            initial-scale=1.0">
+            <tittle>Bem-Vindo</tittle>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+        <section class="fundo">
+                <div class="tema-container">
+                    <span class="texto-tema">Altenar Modo</span>
+                <button id="toggle-theme" class="botao-tema">
+                <span class="bola"></span>
+                </button>
+                </div>
+                <div class="skill">
+                    <h1>Tradição e modernidade a cada corte</h1>
+                    <h2>*Sobre</h2>
+                    <p id="descricao1">Uma barbearia moderna que combina tradição, estilo e atendimento de qualidade. O espaço foi projetado para oferecer conforto e praticidade, proporcionando uma experiência diferenciada para clientes que buscam cortes de cabelo, barba e cuidados pessoais realizados por profissionais qualificados.</p><br>
+                    <p id="descricao2">Com um ambiente acolhedor e serviços personalizados, a barbearia atende diferentes estilos e preferências, utilizando técnicas atualizadas e produtos de alta qualidade. O compromisso com a excelência garante resultados que valorizam a aparência e a confiança de cada cliente</p>
+                </div>
+                <div class="servicos-precos">
+                    <h2>Serviços & Preços</h2>
+                    <p>Conheça nossos serviços e escolha a opção ideal para renovar o seu estilo com praticidade</p>
+                    <div class="cards-servicos">
+                        <div class="card-servico">
+                            <h3>Corte Tradicional</h3>
+                            <p>Visual Limpo, acabamento preciso e estilo para o dia a dia.</p>
+                            <span>R$35,00</span>
+                        </div>
+                        
+                        <div class="card-servico">
+                            <h3>Barba Completa</h3>
+                            <p>Desenho, alinhamento e finalização para valorizar seu visual.</p>
+                            <span>R$25,00</span>
+                        </div>
+
+                        <div class="card-servico">
+                            <h3>Corte + Barba</h3>
+                            <p>Combinação perfeita para um atendimento completo e sofisticado.</p>
+                            <span>R$50,00</span>
+                        </div>
+
+                        <div class="card-servico">
+                            <h3>Acabamento</h3>
+                            <p>Ajustes rápidos para manter o corte e a barba sempre em dia.</p>
+                            <span>R$15,00</span>
+                        </div>
+
+                        <div class="card-servico">
+                            <h3>Sombrancelha</h3>
+                            <p>Correção e definição discreta para valorizar expreessão e harmonizar o visual.</p>
+                            <span>R$10,00</span>
+                        </div>
+                        <div class="card-servico">
+                            <h3>Hidratação Capilar</h3>
+                            <p>Tratamento para fortalecer os fios, reduzir o ressecamento e deixar o cabelo mais saudável e com brilho.</p>
+                            <span>R$20,00</span>
+                        </div>
+                    </div>
+                </div>
+                </section>
+             <section id="agendamento" class="agendamento">
+                <h2>Agende seu Horário</h2>
+                <p class="subtítulo-agendamento">Escolha a data, o horário e preencha seus dados para simular um agendamento.</p>
+                <form class="form-agendamento">
+                    <input type="text" placeholder="seu nome">
+                    <select>
+                        <option value="">Selecione um serviço</option>
+                        <option>Corte Tradicional</option>
+                        <option>Barba Completa</option>
+                        <option>Corte + Barba</option>
+                        <option>Acabamento</option>
+                        <option>Sombrancelha</option>
+                        <option>Hidratação Capilar</option>
+                    </select>
+                    <input type="data" id="data" placeholder="Escolha uma data">
+                    <input type="time" id="hora" placeholder="Escolha um horário">
+                    <button type="submit">Confirmar agendamento</button>
+                </form>
+                <p class="aviso">
+                    *Este é um Projeto fictício para fins de portfólio. Nenhum agendamento é Real.
+                </p>
+            </section>
+            <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+            <script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+             <script src="script.js"></script>
+        </body>
+    </html>

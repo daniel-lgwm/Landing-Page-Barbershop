@@ -1,0 +1,347 @@
+body {
+    background-image: url("./assets/fundobarbearia.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: .5s;
+}
+
+body.dark-mode{
+   background-image: linear-gradient(rgba(0,0,0,0.8)), 
+   url("./assets/fundobarbearia.png");
+   transition: .5s ease;
+}
+
+.skill p {
+    color: rgb(145, 143, 143);
+    display: flex;
+    text-align: center;
+    line-height: 1.7;
+    font-size: 18px;
+    width: 350px;
+    word-wrap: break-word;
+    font-family: fantasy;
+    font-style: italic;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+    color: #d4a437;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+}
+
+.skill h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: 700;
+    color: rgb(204, 202, 202);
+}
+
+.agendamento {
+    max-width: 850px;
+    margin: 90px auto;
+    padding: 40px 30px;
+    background: rgba(0,0,0,0.55);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    backdrop-filter: blur(3px);
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0,0,0,.35);
+}
+
+.agendamento h2{
+    font-family: "Cinzel", serif;
+    font-size: 38px;
+    color: #d4af37;
+    margin-bottom: 12px;
+}
+
+.agendamento p{
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    color: #f5f5f5;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.form-agendamento{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.form-agendamento input,
+.form-agendamento select,
+.form-agendamento textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 52px;
+    padding: 0 16px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: rgba(255,255,255, 0.08);
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    display: block;
+    outline: none;
+}
+
+.form-agendamento input::placeholder,
+.form-agendamento textarea::placeholder{
+    color: rgba(255,255,255, 0.7);
+}
+
+.form-agendamento input:focus,
+.form-agendamento select:focus,
+.form-agendamento textarea:focus{
+    border-radius: #d4af37;
+    box-shadow: 0 0 0 3px rgba(212,175,55. 0.15);
+}
+
+.form-agendamento button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #d4af37;
+    color: #111;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form-agendamento button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212.175,55, 0.25);
+}
+
+.form-agendamento select option{
+    color: #111;
+}
+
+.aviso{
+    margin: 20px auto 0 auto;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
+ .subtítulo-agendamento{
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto 25px;
+    padding: 14px 16px;
+    border: 2px solid white;
+    border-radius: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.20);
+    line-height: 1.5;
+ }
+
+ .servicos-precos {
+    padding: 80px;
+    text-align: center;
+    color: white;
+ }
+
+ .servicos-precos h2 {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    font-family: "playfair Display", serif;
+ }
+
+ .servicos-precos > p {
+    max-width: 420px;
+    margin: 15px auto 35px;
+    font-size: 0.95rem;
+    color: #d6d6d6;
+    line-height: 1.6;
+    text-align: center;
+ }
+
+ .card-servico {
+    background: rgba(255,255,255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 25px 40px;
+    width: 100%;
+    max-width: 180px;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+ }
+
+ .card-servico:hover {
+    transform: translateY(-8px);
+    border-color: #f2c94c;
+ }
+
+ .card-servico h3 {
+    font-size: 1.8rem;
+    margin-bottom: 14px;
+    color: #f2c94c;
+ }
+
+ .card-servico p {
+    font-size: 0.90rem;
+    color: #e7e7e7;
+    line-height: 1.5;
+    margin: 0 auto 20px;
+    max-width: 200px;
+    text-align: center;
+    min-height: 55px;
+    font-family: cursive;
+ }
+
+ .card-servico span {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(5, 5, 5);
+    background: #f2c94c;
+    padding: 8px 18px;
+    border-radius: 999px;
+ }
+
+ .cards-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: 0px auto 0;
+ }
+
+ .fundo {
+    display: flex;
+    justify-content:left;
+    align-items: flex-start;
+    gap: 10px;
+    transition: filter 0.6s ease;
+ }
+ .fundo {
+    position: relative;
+ }
+
+ .fundo::before{
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: rgba(0, 0, 0, 0);
+   transition: background 0.5s ease;
+   pointer-events: none;
+ }
+
+ .fundo.dark-mode::before{
+   background: rgba(0, 0, 0, 0.0);
+ }
+
+ .fundo > * {
+    position: relative;
+    z-index: 1;
+ }
+
+ .fundo.dark-mode h1,
+ .fundo.dark-mode h2,
+ .fundo.dark-mode h3,
+ .fundo.dark-mode p,
+ .fundo.dark-mode label {
+    color: rgb(167, 165, 165);
+ }
+
+ .fundo.dark-mode .card-servico {
+    background: rgba(25, 25, 25, 0.9);
+    border: 1px solid #d4a437;
+ }
+
+ .fundo.dark-mode input,
+ .fundo.dark-mode select {
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+ }
+
+ .tema-container{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 1000;
+ }
+
+ .texto-tema{
+    color: rgb(255, 248, 248);
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+ }
+
+ .botao-tema{
+    width: 78px;
+    height: 36px;
+    background: #d4a437;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: .4s;
+ }
+
+ .bola{
+    width: 28px;
+    height: 28px;
+    background: #fffdfd;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .3s;
+ }
+
+ .botao-tema.ativo{
+    background: #555;
+ }
+
+ .botao-tema.ativo .bola{
+    left: 46px;
+ }
+
+ .agendamento.dark-mode{
+   background: #111;
+   color: #fff;
+   transition: 0.4s ease;
+ }
+
+ .agendamento.dark-mode h2,
+ .agendamento.dark-mode p
+ .agendamento.dark-mode label{
+   color: #fff;
+ }
+
+ .agendamento.dark-mode input,
+ .agendamento.dark-mode textarea,
+ .agendamento.dark-mode select {
+   background: #222;
+   color: #fff;
+   border: 1px solid #555;
+ }
+
